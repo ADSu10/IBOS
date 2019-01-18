@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Braille Gcode</title>
+    <!-- <script src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.10.2/paper-full.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.1/dat.gui.min.js"></script> -->
+    <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/paper-full.min.js"></script>
+    <script type="text/javascript" src="./js/dat.gui.min.js"></script>
+    <!-- <script src="StreamSaver.js"></script> -->
+    <!-- <script src="polyfill.min.js"></script> -->
+    <link rel="stylesheet" href="./css/style.css"/>
+
+    <script>var languages = {}</script>
+    <script src="./js/braille6.js"></script>
+    <script src="./js/braille8old.js"></script>
+    <script src="./js/braille8new.js"></script>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <h1>Braille Gcode</h1>
+
+    <p>Braille Gcode es un proyecto para escribir en Braille en papel usando una impresoras IBOS.</p>
+
+
+    <div id="textareas">
+         <textarea id='latin' placeholder="Ingrese su texto"></textarea>
+         <!-- <textarea id='braille'></textarea> -->
+         <div id="gui"></div>
+       </div>
+
+       <div id="output">
+         <canvas id="paperCanvas" resize hdpi></canvas>
+         <div id="gcode-container"><textarea id="gcode"></textarea></div>
+         <div>Tamaño de impresión: <span id="print-size">--</span></div>
+       </div>
+
+     </body>
+
+
+
+</html>
